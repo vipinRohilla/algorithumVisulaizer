@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tablet.css">
+</head>
+
+<body class="p-3 mb-2 bg-dark text-white">
+    <header>
+        <div class="header">
+            <h1 class="sortingTitle">Sorting Visualizer</h1> 
+            <h1>|</h1>
+            <a href="searching.html"><h1>Searching Visualizer</h1></a>
+        </div>
+        
+        <nav>
+            <div class="row">
+                <div class="col gap-2 d-sm-flex" id="newArray">
+                    <button type="button" class="btn btn-outline-success newArray">New Array</button>
+                </div>
+                <div class="col" id="input">
+                    <span id="size">Size
+                        <input id="arr_sz" type="range" min="5" max="100" step=1 value=30>
+                    </span>
+                    <span id="speed">Speed
+                        <input id="speed_input" type="range" min="20" max="600" stepDown=10 value=60>
+                    </span>
+                </div>
+            </div>
+           
+        </nav>
+    </header>
+    <div class="col gap-2 d-sm-flex justify-content-center">
+        <button type="button" class="btn btn-outline-primary btn-dark bubbleSort">Bubble Sort</button>
+        <button type="button" class="btn btn-outline-primary btn-dark selectionSort">Selection Sort</button>
+        <button type="button" class="btn btn-outline-primary btn-dark insertionSort">Insertion Sort</button>
+        <button type="button" class="btn btn-outline-primary btn-dark quickSort">Quick Sort</button>
+        <button type="button" class="btn btn-outline-primary btn-dark mergeSort">Merge Sort</button>
+        <button type="button" class="btn btn-outline-primary btn-dark countSort">Count Sort</button>
+        <button type="button" class="btn btn-outline-primary btn-dark waveSort">Wave Sort</button>
+        <button type="button" class="btn btn-outline-primary btn-dark radixSort">Radix Sort</button>
+    </div>
+    
+    <div id="bars" class="flex-container">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="sortingAlgorithms/sorting.js"></script>
+    <script src="sortingAlgorithms/bubble.js"></script>
+    <script src="sortingAlgorithms/insertion.js"></script>
+    <script src="sortingAlgorithms/merge.js"></script>
+    <script src="sortingAlgorithms/quick.js"></script>
+    <script src="sortingAlgorithms/selection.js"></script>
+    <script src="sortingAlgorithms/count.js"></script>
+    <script src="sortingAlgorithms/wave.js"></script>
+    <script src="sortingAlgorithms/radix.js"></script>
+</body>
+</html>
